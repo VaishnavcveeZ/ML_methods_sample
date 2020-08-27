@@ -42,3 +42,12 @@ print('intercept: \n', linear.intercept_)
 prediction = linear.predict(x_test)
 for x in range(len(prediction)):
     print(prediction[x], x_test[x], y_test[x])
+
+#matplotlib
+p='G1'
+
+style.use('ggplot')
+pyplot.scatter(data[p],data['G3'])
+pyplot.xlabel(p)
+pyplot.ylabel('Final Grade')
+pyplot.show()
